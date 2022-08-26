@@ -1,0 +1,36 @@
+@import "../../stylesheets/colors";
+
+.container {
+  border-radius: 0.5rem;
+  border: 1.5px solid $blue;
+  height: 3.5rem;
+  max-height: 3.5rem;
+  padding: 1rem;
+  background-color: $white;
+  text-align: center;
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 0.38rem;
+
+    span {
+      color: $red;
+    }
+  }
+
+  p {
+    margin: 0;
+    color: $secondary;
+  }
+
+  &:hover {
+    background-color: $blue;
+    box-shadow: -1px 5px 10px $primary;
+    cursor: pointer;
+
+    .title span,
+    p {
+      color: $white;
+    }
+  }
+}

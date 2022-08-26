@@ -1,0 +1,82 @@
+@import "../../stylesheets/base";
+
+.container {
+  background-color: $white;
+  border-radius: 10px;
+  border: 2px solid $red;
+  color: $primary;
+  padding: 0.5rem 1rem;
+  position: relative;
+
+  .label {
+    color: $silver;
+  }
+
+  .schoolImage {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+
+    img {
+      border-radius: 5px;
+    }
+  }
+
+  .nameContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0.5rem 0 0.25rem 0;
+
+    .name {
+      span {
+        font-size: 20px;
+      }
+    }
+
+    .school {
+      align-items: center;
+      display: flex;
+      font-size: 18px;
+      font-weight: bold;
+      margin-left: 0.5rem;
+
+      &.abjuration {
+        color: $abjuration;
+      }
+      &.conjuration {
+        color: $conjuration;
+      }
+
+      &.divination {
+        color: $divination;
+      }
+
+      &.enchantment {
+        color: $enchantment;
+      }
+
+      &.evocation {
+        color: $evocation;
+      }
+
+      &.illusion {
+        color: $illusion;
+      }
+
+      &.necromancy {
+        color: $necromancy;
+      }
+
+      &.transmutation {
+        color: $transmutation;
+      }
+    }
+  }
+
+  .description {
+    p {
+      margin: 0.25rem 0;
+      color: $secondary;
+    }
+  }
+}
