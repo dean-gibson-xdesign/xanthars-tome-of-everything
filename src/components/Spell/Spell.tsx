@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ISpell } from "../../api/GetSpells";
+import { ISpell } from "../../api/firebase-build/GetSpells";
 import styles from "./Spell.module.scss";
 
 type SpellProps = {
@@ -10,7 +10,7 @@ type SpellProps = {
 const Spell = ({ spell }: SpellProps) => {
   return (
     <>
-      <Link href={`/spells/${encodeURIComponent(spell.index)}`}>
+      <Link href={`/spells/${spell.index}`}>
         <div className={styles.container}>
           <div className={styles.schoolImage}>
             <Image

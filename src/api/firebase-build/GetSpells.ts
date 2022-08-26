@@ -1,7 +1,7 @@
 import { AxiosResponse } from "axios";
 import { doc, setDoc } from "firebase/firestore";
-import { database } from "../contexts/firebase/firebase-config";
-import { apiClient } from "./Client";
+import { database } from "../../contexts/firebase/firebase-config";
+import { apiClient } from "../Client";
 export interface ISpell {
   _id: string;
   index: string;

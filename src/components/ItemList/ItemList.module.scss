@@ -3,12 +3,13 @@
 .container {
   display: flex;
   flex-flow: column nowrap;
-  max-width: 520px;
-  min-width: 520px;
-  width: 520px;
+  max-width: 500px;
+  min-width: 500px;
+  width: 500px;
 
   .content {
     > * {
+      cursor: pointer;
       border-radius: 10px;
       box-shadow: -1px 5px 10px $primary;
     }

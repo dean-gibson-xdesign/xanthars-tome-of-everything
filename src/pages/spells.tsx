@@ -2,7 +2,7 @@ import { doc, DocumentData, getDoc } from "firebase/firestore";
 import { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
 import { useState } from "react";
-import { getSpells, ISpell } from "../api/GetSpells";
+import { ISpell } from "../api/firebase-build/GetSpells";
 import ItemList from "../components/ItemList/ItemList";
 import Header from "../components/layouts/Header";
 import Spell from "../components/Spell/Spell";
